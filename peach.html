@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Webpage!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc0cb; /* Peach color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #ffc0cb; /* Peach color */
+        }
+
+        .slide img,
+        .slide iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slide-content {
+            padding: 20px;
+        }
+
+        .slide-navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation-box {
+            display: inline-block;
+            background-color: #fff;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .login-container {
+            max-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Slightly smaller images */
+        .small-image {
+            max-width: 400px;
+            height: auto;
+        }
+
+        /* Hide the next button only on the first slide */
+        .hide-next-button .slide:first-child .slide-navigation #nextButton {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide">
+            <div class="login-container hide-next-button"> <!-- Add class to hide next button -->
+                <h2>Welcome to my first Webpage!</h2>
+                <p>Enter your name. ex ; Oyen:</p>
+                <form id="cover-form" onsubmit="return false;">
+                    <input class="login-input" type="text" id="username" placeholder="Username" required>
+                </form>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="long-paragraph">
+                <h2>Thank you for coming!</h2>
+                <p>Hi there! A very much thank you for trying my first webpage!.</p>
+                <p>It is truly an honor for me as my first webpage visitor is someone sweet with the name Safiah Nadiah.</p>
+                <p>I am still learning coding and have a lot more to learn. I am glad that you are willing to help me with my experiment or much called a project. As a token of appreciation please press next as I have prepared a suprise for my first visitor, the sweet Safiah!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <video width="800" height="450" controls>
+                <source src="videos/SweetieSafiah.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="slide-content">
+                <p>AHAAA! you just got pranked! On this day, 19 years ago, a baby was brought to this world, a baby was born. On this day, 23rd August.This webpage is indeed a birthday wish for the love of my life, Safiah Nadiah! Happy Birthday to the most amazing person to ever come in my life! I pray that you are blessed with a beautiful birthday. May Allah bless you with a never-ending happiness! May Allah grant you a wonderful life for today, tomorrow and after.
+
+                    Press Next!
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="small-image" src="images/piah1.jpg" alt="Slide 2">
+            <div class="slide-content">
+                <p>Happy Birthday to the cutest person to ever exist in this whole world! Look at her, a very cute person but she's still not admitting it :< . I hope you will become a more more more cute cute person as you grow up!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="small-image" src="images/piah2.jpg" alt="Slide 3">
+            <div class="slide-content">
+                <p>Apart of being a cute person, Safiah is also a very pretty person. Look at her smiling with such charming eyes. She is indeed very pretty and beautiful!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="small-image" src="images/piah3.jpg" alt="Slide 4">
+            <div class="slide-content">
+                <p>Lastly, she is the kindest person I have ever met in my whole life :) The way she treats people, the way she care for people around her, the way she love people around her. Safiah is very kind. May Allah pay your kindness with Syurga!
+
+                    Press Next for The Last Slide!
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-text">
+                <p> Selamat Hari Lahir yang ke - 19, Safiah Nadiah! Saya doakan awak dipanjangkan umur, dimurahkan rezeki dan dipermudahkan segala urusan. Kebaikan awak, kecantikan awak, gelak tawa awak, senyum manis awak, marah geram awak, sedih hiba awak, lebih kurang awak, semuanya dah mewarnai hidup saya yang dulu hanya hitam dan putih. I made this webpage as a token of appreciation untuk orang yang saya sayang dan cintai, Orang harap sangat awak dapat jumpa kegembiraan awak, kebahagiaan awak, awak dapat capai cita-cita awak, dapat buat benda yang awak suka. Doa orang akan sentiasa iringi awak dalam setiap langkah perjalanan hidup awak. You're not alone, sayang. I will always be right there whenever you need me.
+                    Until the end of my life and forever after, I love you, Safiah Nadiah! and Happy Birthday, Achikk Nad! ps : hshshs sayang dah tua XD
+
+                    xoxo danial <3
+                </p>
+            </div>
+        </div>
+
+        <div class="slide-navigation">
+            <div class="navigation-box" onclick="changeSlide(-1)" id="prevButton">Prev</div>
+            <div class="navigation-box" onclick="changeSlide(1)" id="nextButton">Next</div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function showSlide(n) {
+            if (n >= slides.length) {
+                currentSlide = 0;
+            } else if (n < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = n;
+            }
+
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[currentSlide].style.display = 'block';
+
+            // Show/hide navigation buttons
+            if (currentSlide === 0) {
+                prevButton.style.display = 'none';
+                nextButton.style.display = 'block';
+            } else if (currentSlide === slides.length - 1) {
+                prevButton.style.display = 'block';
+                nextButton.style.display = 'none';
+            } else {
+                prevButton.style.display = 'block';
+                nextButton.style.display = 'block';
+            }
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
